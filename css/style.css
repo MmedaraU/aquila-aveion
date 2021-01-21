@@ -62,12 +62,13 @@ svg {
 
 nav {
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   justify-content: center;
+  text-transform: uppercase;
 }
 nav li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 li img {
