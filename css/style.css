@@ -1,0 +1,76 @@
+@import url(Normalize.css);
+
+/*========== General Styles ==========*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Calibri Light", Verdana, "Arial Narrow", Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background: linear-gradient(to right, #d0a050 50%, #e0b060 50%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem auto;
+  grid-template-areas: "header" "content" "main-nav";
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px 0;
+  font-size: 3rem;
+  letter-spacing: .3em;
+}
+section {
+  max-width: 100%;
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 2.65fr 4fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "empty image list";
+}
+img {
+  grid-area: image;
+  align-self: center;
+  height: 400px;
+  width: 400px;
+}
+section ul {
+  grid-area: list;
+  align-self: center;
+}
+section li {
+  margin-top: 25px;
+}
+svg {
+  height: 30px;
+}
+
+nav {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+li img {
+  height: 70px;
+  width: 70px;
+  margin-top: -20px;
+}
